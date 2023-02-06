@@ -323,7 +323,7 @@ async def check(interaction: nextcord.Interaction, username: str = SlashOption(d
     em.add_field(name="**Trivia Winnings**",value=f"```{str(trivia_Winnings)}```")
     await interaction.response.send_message(embed=em, ephemeral=True)
 
-key = "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"
+key = ""
 openai.api_key = key
 
 @bot.slash_command(name="write", description="Use AI to generate text or something cool lol")
